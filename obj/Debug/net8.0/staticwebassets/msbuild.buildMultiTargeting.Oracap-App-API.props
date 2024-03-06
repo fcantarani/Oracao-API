@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Oracap-App-API.props" />
+</Project>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "HAVfsEeWDNmDfpBYmErkZdOa1cyw3N+66Hl9guOtDoU=",
+  "Source": "Oracap-App-API",
+  "BasePath": "_content/Oracap-App-API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
