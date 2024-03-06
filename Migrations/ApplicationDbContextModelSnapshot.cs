@@ -128,19 +128,19 @@ namespace Oracap_App_API.Migrations
             modelBuilder.Entity("Oracap_App_API.Model.PrayerModel", b =>
                 {
                     b.HasOne("Oracap_App_API.Model.CategoryModel", "Category")
-                        .WithMany("Prayers")
+                        .WithMany()
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Oracap_App_API.Model.PrayTypeModel", "PrayType")
-                        .WithMany("Prayers")
+                        .WithMany()
                         .HasForeignKey("PrayTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Oracap_App_API.Model.ViewTypeModel", "ViewType")
-                        .WithMany("Prayers")
+                        .WithMany()
                         .HasForeignKey("ViewTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -150,21 +150,6 @@ namespace Oracap_App_API.Migrations
                     b.Navigation("PrayType");
 
                     b.Navigation("ViewType");
-                });
-
-            modelBuilder.Entity("Oracap_App_API.Model.CategoryModel", b =>
-                {
-                    b.Navigation("Prayers");
-                });
-
-            modelBuilder.Entity("Oracap_App_API.Model.PrayTypeModel", b =>
-                {
-                    b.Navigation("Prayers");
-                });
-
-            modelBuilder.Entity("Oracap_App_API.Model.ViewTypeModel", b =>
-                {
-                    b.Navigation("Prayers");
                 });
 #pragma warning restore 612, 618
         }

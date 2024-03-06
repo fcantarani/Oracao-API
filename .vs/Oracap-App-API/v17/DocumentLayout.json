@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Migrations\\20240306171651_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240306171651_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|d:\\developments\\applications\\private\\oracao.app\\oracap-app-api\\model\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|solutionrelative:model\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,37 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240306171651_Initial.cs",
-              "DocumentMoniker": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Migrations\\20240306171651_Initial.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240306171651_Initial.cs",
-              "ToolTip": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Migrations\\20240306171651_Initial.cs",
-              "RelativeToolTip": "Migrations\\20240306171651_Initial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T17:16:51.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoryModel.cs",
-              "DocumentMoniker": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Model\\CategoryModel.cs",
-              "RelativeDocumentMoniker": "Model\\CategoryModel.cs",
-              "ToolTip": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Model\\CategoryModel.cs",
-              "RelativeToolTip": "Model\\CategoryModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T17:15:27.808Z",
-              "EditorCaption": ""
             }
           ]
         }

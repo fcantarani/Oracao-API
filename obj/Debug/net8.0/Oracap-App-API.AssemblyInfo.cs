@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Oracap-App-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4dfdc08913f5471eefeead1f42d2ffb9fef40b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59a757afd30edaa4ef4d384af994f7b435e8df6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Oracap-App-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Oracap-App-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

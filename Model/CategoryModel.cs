@@ -11,6 +11,4 @@ public class CategoryModel
     public string Name { get; set; } = string.Empty;
     public string HexaColor { get; set; } = "#FFFFFF";
     public DateTime CreatedAt { get; set; } = DateTime.Now;
-    public ICollection<PrayerModel>? Prayers  { get; set; }
-
 }
