@@ -76,9 +76,9 @@ namespace Oracap_App_API.Migrations
                     Description = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Archived = table.Column<bool>(type: "tinyint(1)", nullable: false),
-                    CategoryId = table.Column<int>(type: "int", nullable: true),
-                    ViewTypeId = table.Column<int>(type: "int", nullable: true),
-                    PrayTypeId = table.Column<int>(type: "int", nullable: true)
+                    CategoryId = table.Column<int>(type: "int", nullable: false),
+                    ViewTypeId = table.Column<int>(type: "int", nullable: false),
+                    PrayTypeId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -87,17 +87,20 @@ namespace Oracap_App_API.Migrations
                         name: "FK_Prayers_Categories_CategoryId",
                         column: x => x.CategoryId,
                         principalTable: "Categories",
-                        principalColumn: "CategoryId");
+                        principalColumn: "CategoryId",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Prayers_PrayTypes_PrayTypeId",
                         column: x => x.PrayTypeId,
                         principalTable: "PrayTypes",
-                        principalColumn: "PrayTypeId");
+                        principalColumn: "PrayTypeId",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Prayers_ViewTypes_ViewTypeId",
                         column: x => x.ViewTypeId,
                         principalTable: "ViewTypes",
-                        principalColumn: "ViewTypeId");
+                        principalColumn: "ViewTypeId",
+                        onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 

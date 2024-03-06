@@ -11,7 +11,17 @@ public class PrayerModel
     public string Title { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
     public bool Archived { get; set; }
+
+
+    [ForeignKey("CategoryId")]
+    public int CategoryId { get; set; }
     public CategoryModel? Category { get; set; }
+
+    [ForeignKey("ViewTypeId")]
+    public int ViewTypeId { get; set; }
     public ViewTypeModel? ViewType { get; set; }
+
+    [ForeignKey("PrayTypeId")]
+    public int PrayTypeId { get; set; }
     public PrayTypeModel? PrayType { get; set; }
 }

@@ -77,21 +77,21 @@ namespace Oracap_App_API.Migrations
                     b.Property<bool>("Archived")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<int?>("CategoryId")
+                    b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int?>("PrayTypeId")
+                    b.Property<int>("PrayTypeId")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int?>("ViewTypeId")
+                    b.Property<int>("ViewTypeId")
                         .HasColumnType("int");
 
                     b.HasKey("PrayerId");
@@ -128,22 +128,43 @@ namespace Oracap_App_API.Migrations
             modelBuilder.Entity("Oracap_App_API.Model.PrayerModel", b =>
                 {
                     b.HasOne("Oracap_App_API.Model.CategoryModel", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId");
+                        .WithMany("Prayers")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Oracap_App_API.Model.PrayTypeModel", "PrayType")
-                        .WithMany()
-                        .HasForeignKey("PrayTypeId");
+                        .WithMany("Prayers")
+                        .HasForeignKey("PrayTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Oracap_App_API.Model.ViewTypeModel", "ViewType")
-                        .WithMany()
-                        .HasForeignKey("ViewTypeId");
+                        .WithMany("Prayers")
+                        .HasForeignKey("ViewTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Category");
 
                     b.Navigation("PrayType");
 
                     b.Navigation("ViewType");
+                });
+
+            modelBuilder.Entity("Oracap_App_API.Model.CategoryModel", b =>
+                {
+                    b.Navigation("Prayers");
+                });
+
+            modelBuilder.Entity("Oracap_App_API.Model.PrayTypeModel", b =>
+                {
+                    b.Navigation("Prayers");
+                });
+
+            modelBuilder.Entity("Oracap_App_API.Model.ViewTypeModel", b =>
+                {
+                    b.Navigation("Prayers");
                 });
 #pragma warning restore 612, 618
         }

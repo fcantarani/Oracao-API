@@ -11,4 +11,6 @@ public class ViewTypeModel
     public string Name { get; set; } = string.Empty;
     public DateTime CreatedAt { get; set; } = DateTime.Now;
 
+    public ICollection<PrayerModel>? Prayers { get; set; }
+
 }
