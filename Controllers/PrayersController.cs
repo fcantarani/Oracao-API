@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Oracap_App_API.Data;
 using Oracap_App_API.Model;
 
 namespace Oracap_App_API.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/v1/[controller]")]
 [ApiController]
 public class PrayersController : ControllerBase
 {
@@ -16,14 +17,14 @@ public class PrayersController : ControllerBase
         _context = context;
     }
 
-    // GET: api/Prayers
+    [Authorize]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<PrayerModel>>> GetPrayers()
     {
         return await _context.Prayers.ToListAsync();
     }
 
-    // GET: api/Prayers/5
+    [Authorize]
     [HttpGet("{id}")]
     public async Task<ActionResult<PrayerModel>> GetPrayerModel(int id)
     {
@@ -37,8 +38,7 @@ public class PrayersController : ControllerBase
         return prayerModel;
     }
 
-    // PUT: api/Prayers/5
-    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+    [Authorize]
     [HttpPut("{id}")]
     public async Task<IActionResult> PutPrayerModel(int id, PrayerModel prayerModel)
     {
@@ -68,8 +68,7 @@ public class PrayersController : ControllerBase
         return NoContent();
     }
 
-    // POST: api/Prayers
-    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+    [Authorize]
     [HttpPost]
     public async Task<ActionResult<PrayerModel>> PostPrayerModel(PrayerModel prayerModel)
     {
@@ -79,7 +78,7 @@ public class PrayersController : ControllerBase
         return CreatedAtAction("GetPrayerModel", new { id = prayerModel.PrayerId }, prayerModel);
     }
 
-    // DELETE: api/Prayers/5
+    [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeletePrayerModel(int id)
     {

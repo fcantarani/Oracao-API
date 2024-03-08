@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Oracap_App_API.Data;
 using Oracap_App_API.Model;
 
 namespace Oracap_App_API.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/v1/[controller]")]
 [ApiController]
 public class CategoriesController : ControllerBase
 {
@@ -16,14 +17,14 @@ public class CategoriesController : ControllerBase
         _context = context;
     }
 
-    // GET: api/Categories
+    [Authorize]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<CategoryModel>>> GetCategories()
     {
         return await _context.Categories.ToListAsync();
     }
 
-    // GET: api/Categories/5
+    [Authorize]
     [HttpGet("{id}")]
     public async Task<ActionResult<CategoryModel>> GetCategoryModel(int id)
     {
@@ -37,8 +38,7 @@ public class CategoriesController : ControllerBase
         return categoryModel;
     }
 
-    // PUT: api/Categories/5
-    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+    [Authorize]
     [HttpPut("{id}")]
     public async Task<IActionResult> PutCategoryModel(int id, CategoryModel categoryModel)
     {
@@ -68,8 +68,7 @@ public class CategoriesController : ControllerBase
         return NoContent();
     }
 
-    // POST: api/Categories
-    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+    [Authorize]
     [HttpPost]
     public async Task<ActionResult<CategoryModel>> PostCategoryModel(CategoryModel categoryModel)
     {
@@ -79,7 +78,7 @@ public class CategoriesController : ControllerBase
         return CreatedAtAction("GetCategoryModel", new { id = categoryModel.CategoryId }, categoryModel);
     }
 
-    // DELETE: api/Categories/5
+    [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteCategoryModel(int id)
     {

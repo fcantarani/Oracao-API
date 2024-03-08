@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Oracap_App_API.Data;
 using Oracap_App_API.Model;
 
 namespace Oracap_App_API.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/v1/[controller]")]
 [ApiController]
 public class ViewTypesController : ControllerBase
 {
@@ -16,14 +17,14 @@ public class ViewTypesController : ControllerBase
         _context = context;
     }
 
-    // GET: api/ViewTypes
+    [Authorize]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<ViewTypeModel>>> GetViewTypes()
     {
         return await _context.ViewTypes.ToListAsync();
     }
 
-    // GET: api/ViewTypes/5
+    [Authorize]
     [HttpGet("{id}")]
     public async Task<ActionResult<ViewTypeModel>> GetViewTypeModel(int id)
     {
@@ -37,8 +38,7 @@ public class ViewTypesController : ControllerBase
         return viewTypeModel;
     }
 
-    // PUT: api/ViewTypes/5
-    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+    [Authorize]
     [HttpPut("{id}")]
     public async Task<IActionResult> PutViewTypeModel(int id, ViewTypeModel viewTypeModel)
     {
@@ -68,8 +68,7 @@ public class ViewTypesController : ControllerBase
         return NoContent();
     }
 
-    // POST: api/ViewTypes
-    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+    [Authorize]
     [HttpPost]
     public async Task<ActionResult<ViewTypeModel>> PostViewTypeModel(ViewTypeModel viewTypeModel)
     {
@@ -79,7 +78,7 @@ public class ViewTypesController : ControllerBase
         return CreatedAtAction("GetViewTypeModel", new { id = viewTypeModel.ViewTypeId }, viewTypeModel);
     }
 
-    // DELETE: api/ViewTypes/5
+    [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteViewTypeModel(int id)
     {

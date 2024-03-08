@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("c13b176a-3746-465a-90be-dd3da00f7918")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Oracap-App-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59a757afd30edaa4ef4d384af994f7b435e8df6e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b5afd97d8af45162c06350c5b9461c2d012964e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Oracap-App-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Oracap-App-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

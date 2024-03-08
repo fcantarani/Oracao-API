@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Oracap_App_API.Data;
 using Oracap_App_API.Model;
 
 namespace Oracap_App_API.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/v1/[controller]")]
 [ApiController]
 public class PrayTypesController : ControllerBase
 {
@@ -16,14 +17,14 @@ public class PrayTypesController : ControllerBase
         _context = context;
     }
 
-    // GET: api/PrayTypes
+    [Authorize]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<PrayTypeModel>>> GetPrayTypes()
     {
         return await _context.PrayTypes.ToListAsync();
     }
 
-    // GET: api/PrayTypes/5
+    [Authorize]
     [HttpGet("{id}")]
     public async Task<ActionResult<PrayTypeModel>> GetPrayTypeModel(int id)
     {
@@ -37,8 +38,7 @@ public class PrayTypesController : ControllerBase
         return prayTypeModel;
     }
 
-    // PUT: api/PrayTypes/5
-    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+    [Authorize]
     [HttpPut("{id}")]
     public async Task<IActionResult> PutPrayTypeModel(int id, PrayTypeModel prayTypeModel)
     {
@@ -68,8 +68,7 @@ public class PrayTypesController : ControllerBase
         return NoContent();
     }
 
-    // POST: api/PrayTypes
-    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+    [Authorize]
     [HttpPost]
     public async Task<ActionResult<PrayTypeModel>> PostPrayTypeModel(PrayTypeModel prayTypeModel)
     {
@@ -79,7 +78,7 @@ public class PrayTypesController : ControllerBase
         return CreatedAtAction("GetPrayTypeModel", new { id = prayTypeModel.PrayTypeId }, prayTypeModel);
     }
 
-    // DELETE: api/PrayTypes/5
+    [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeletePrayTypeModel(int id)
     {

@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|d:\\developments\\applications\\private\\oracao.app\\oracap-app-api\\controllers\\viewtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|solutionrelative:controllers\\viewtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|d:\\developments\\applications\\private\\oracao.app\\oracap-app-api\\controllers\\prayerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|solutionrelative:controllers\\prayerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|d:\\developments\\applications\\private\\oracao.app\\oracap-app-api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewTypesController.cs",
+              "DocumentMoniker": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Controllers\\ViewTypesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ViewTypesController.cs",
+              "ToolTip": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Controllers\\ViewTypesController.cs",
+              "RelativeToolTip": "Controllers\\ViewTypesController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAkwGUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T12:10:54.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PrayersController.cs",
+              "DocumentMoniker": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Controllers\\PrayersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PrayersController.cs",
+              "ToolTip": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Controllers\\PrayersController.cs",
+              "RelativeToolTip": "Controllers\\PrayersController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAkwF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T12:10:42.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T12:10:20.82Z",
+              "EditorCaption": ""
             }
           ]
         }
