@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|d:\\developments\\applications\\private\\oracao.app\\oracap-app-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|d:\\developments\\applications\\private\\oracao.app\\oracap-app-api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|d:\\developments\\applications\\private\\oracao.app\\oracap-app-api\\controllers\\viewtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|solutionrelative:controllers\\viewtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|d:\\developments\\applications\\private\\oracao.app\\oracap-app-api\\controllers\\prayerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|solutionrelative:controllers\\prayerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|d:\\developments\\applications\\private\\oracao.app\\oracap-app-api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C75A524-23D3-40CC-AA59-5AF27C103185}|Oracap-App-API.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +35,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T19:12:58.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ViewTypesController.cs",
               "DocumentMoniker": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Controllers\\ViewTypesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ViewTypesController.cs",
@@ -43,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PrayersController.cs",
               "DocumentMoniker": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Controllers\\PrayersController.cs",
               "RelativeDocumentMoniker": "Controllers\\PrayersController.cs",
@@ -51,18 +68,17 @@
               "RelativeToolTip": "Controllers\\PrayersController.cs",
               "ViewState": "AQIAAEQAAAAAAAAAAAAkwF8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T12:10:42.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T12:10:42.556Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
               "ToolTip": "D:\\Developments\\Applications\\Private\\Oracao.App\\Oracap-App-API\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBMAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T12:10:20.82Z",
               "EditorCaption": ""

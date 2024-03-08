@@ -17,7 +17,6 @@ public class CategoriesController : ControllerBase
         _context = context;
     }
 
-    [Authorize]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<CategoryModel>>> GetCategories()
     {

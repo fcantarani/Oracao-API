@@ -4,8 +4,10 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore;
 using Oracap_App_API.Data;
 using System.Text;
+using Oracap_App_API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
+var cors = builder.Configuration["CORS"] ?? throw new ArgumentException("Parametro 'cors' nulo ou vazio.");
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -66,7 +68,11 @@ builder.Services.AddAuthentication(x =>
     };
 });
 
+var corsOrigins = cors.Split(',', StringSplitOptions.RemoveEmptyEntries);
+builder.AddCors(corsOrigins);
+
 var app = builder.Build();
+app.UseCors();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
